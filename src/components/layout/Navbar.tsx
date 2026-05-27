@@ -24,7 +24,7 @@ const Navbar = () => {
               className="h-20 w-auto object-contain" 
             />
             <span className="font-serif font-bold text-primary text-lg tracking-tight uppercase hidden sm:block">
-              Miranda Propiedades
+              Propiedades Traveling
             </span>
           </Link>
 
