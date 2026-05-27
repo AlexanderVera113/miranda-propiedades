@@ -16,7 +16,7 @@ const Footer = () => {
                 className="h-12 w-auto object-contain" 
               />
               <span className="font-serif font-bold text-white text-lg tracking-tight uppercase">
-                Miranda Propiedades
+                Propiedades Traveling
               </span>
             </div>
             <p className="text-white/60 font-light max-w-xs text-sm leading-relaxed mt-2">
@@ -52,7 +52,7 @@ const Footer = () => {
         {/* Barra de Copyright */}
         <div className="border-t border-white/10 pt-8 text-center flex flex-col md:flex-row justify-between items-center gap-4">
           <span className="text-white/40 text-xs tracking-wider uppercase">
-            © {new Date().getFullYear()} Miranda Propiedades. Todos los derechos reservados.
+            © {new Date().getFullYear()} Propiedades Traveling. Todos los derechos reservados.
           </span>
         </div>
       </div>

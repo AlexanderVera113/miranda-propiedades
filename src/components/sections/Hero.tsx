@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto mt-16">
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-secondary font-bold tracking-tight mb-6 drop-shadow-lg">
-          MIRANDA PROPIEDADES
+          POPIEDADES TRAVELING
         </h1>
         
         <p className="text-lg md:text-xl lg:text-2xl text-white font-sans font-light tracking-wider uppercase mb-10 max-w-3xl mx-auto opacity-90">

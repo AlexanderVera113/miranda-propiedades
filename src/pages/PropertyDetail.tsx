@@ -97,7 +97,7 @@ const PropertyDetail = () => {
             <Link to="/" className="flex items-center gap-3 cursor-pointer">
               <img src={logoReal} alt="Logo Miranda Propiedades" className="h-14 w-auto object-contain" />
               <span className="font-serif font-bold text-primary text-lg tracking-tight uppercase hidden sm:block">
-                Miranda Propiedades
+                Propiedades Traveling
               </span>
             </Link>
           </div>

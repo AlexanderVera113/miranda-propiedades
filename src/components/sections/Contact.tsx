@@ -13,7 +13,7 @@ const Contact = () => {
               ¿Lista para rentabilizar tu propiedad?
             </h2>
             <p className="text-white/80 font-light mb-10 text-lg">
-              Garantizamos aumentar tus reservas de Airbnb y proteger tu patrimonio. Contáctanos hoy para una asesoría personalizada.
+              Garantizamos aumentar tus reservas de Airbnb y proteger tu propiedad. Contáctanos hoy para una asesoría personalizada.
             </p>
             
             <div className="space-y-6">
