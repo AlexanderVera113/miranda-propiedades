@@ -3,6 +3,7 @@ import { ArrowLeft, Bed, Bath, Car, MapPin, CheckCircle, MessageCircle } from 'l
 import Footer from '../components/layout/Footer';
 import logoReal from '../images/Logo/Logo-MirandaPropiedades.png';
 import Venta1 from '../images/Inmobiliario/Venta1.webp';
+import Arriendo1 from '../images/Inmobiliario/Arriendo1.webp';
 
 const PropertyDetail = () => {
   const { id } = useParams();
@@ -44,13 +45,24 @@ const PropertyDetail = () => {
         {
       id: 4,
       price: 'CLP 200.000.000',
-      title: 'Casa en Venta. Pasaje Playa el Saladero con avenida Padre Hurtado, Iquique',
+      title: 'Casa en Venta. Pasaje Playa el Saladero con avenida Padre Hurtado, Iquique.',
       description: 'Amplia y espectacular casa de 2 pisos, ideal para familias numerosas. Cuenta con 6 confortables dormitorios, 2 baños, living, comedor, cocina tradicional y una práctica bodega. En su exterior, ofrece un acogedor antejardín, un pequeño patio interior y capacidad para 2 estacionamientos. Propiedad de único dueño y sin deudas (ampliación no regularizada).',
       beds: 6,
       baths: 2,
       parking: 2,
       image: Venta1,
       features: ['6 Dormitorios', 'Estacionamientos', 'Antejardin', 'Patio Interior', 'Bodega', 'Unico Dueño', '🚫 Ampliación no regularizada'],
+    },
+            {
+      id: 5,
+      price: 'CLP 15.000.000 / Mes',
+      title: 'Hotel En Arriendo Mensual Para Empresas Mineras. Bernardo OHiggins 944, Iquique.',
+      description: 'Excelente hotel amoblado y operativo disponible para arriendo mensual, ideal para empresas mineras. Ubicado estratégicamente en pleno centro de Iquique, la propiedad cuenta con 20 habitaciones completamente equipadas con baño privado, TV, calefont y Wi-Fi. Dispone de una cafetería para 20 personas, servicio de recepción con personal contratado y 10 estacionamientos con cámaras de vigilancia. Facturación directa de inmobiliaria.',
+      beds: 20,
+      baths: 22,
+      parking: 10,
+      image: Arriendo1,
+      features: ['20 Habitaciones Con Baño Privado', '10 Estacionamientos Con Vigilancia', 'Cafeteria', 'TV', 'Wi-Fi', 'Calefont'],
     }
   ];
 

@@ -7,15 +7,17 @@ import Vendido1 from '../images/Inmobiliario/Vendido1.png';
 import Vendido2 from '../images/Inmobiliario/Vendido2.png';
 import Vendido3 from '../images/Inmobiliario/Vendido3.png';
 import Venta1 from '../images/Inmobiliario/Venta1.webp';
+import HotelCorona from '../images/Inmobiliario/HotelCorona.png';
 
 const Properties = () => {
   const [filtroActivo, setFiltroActivo] = useState('Todos');
 
   const properties = [
+    { id: 5, price: 'CLP 15.000.000 / Mes', title: 'Hotel en Arriendo Mensual Para Empresas Mineras. Calle Bernardo OHiggins 944, Iquique', beds: 20, baths: 22, parking: 10, tipo: 'Arriendo', image: HotelCorona, featured: true },
     { id: 4, price: 'CLP 200.000.000', title: 'Casa en Venta, Pasaje Playa el Saladero con avenida Padre Hurtado, Iquique', beds: 6, baths: 2, parking: 2, tipo: 'Venta', image: Venta1, featured: true },
     { id: 2, price: 'CLP 87.000.000', title: 'Edificio Matiz Cavancha. Calle 18 de Septiembre, 1961, Iquique.', beds: 1, baths: 1, parking: 1, tipo: 'Vendido', image: Vendido2, featured: false },
     { id: 3, price: 'CLP 150.000.000', title: 'Condominio Portal Los Heroes, Avenida Heroes De La Concepcion 2784 Torre B, Iquique.', beds: 3, baths: 2, parking: 1, tipo: 'Vendido', image: Vendido3, featured: false },
-    { id: 1, price: 'CLP 130.000.000', title: 'Edificio Amunategui. Calle Zegers 910, Iquique.', beds: 3, baths: 2, parking: 0, tipo: 'Vendido', image: Vendido1, featured: false },
+    { id: 1, price: 'CLP 130.000.000', title: 'Edificio Amunategui. Calle Zegers 910, Iquique.', beds: 3, baths: 2, parking: 0, tipo: 'Vendido', image: Vendido1, featured: false }
   ];
 
   const propiedadesFiltradas = properties.filter(prop => {
