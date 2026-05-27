@@ -2,16 +2,20 @@ import { useState } from 'react';
 import { Bed, Bath, Car, ArrowLeft, Search, Filter } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/layout/Footer';
-import logoReal from '../images/Logo/Logo-MirandaPropiedades.png';   
+import logoReal from '../images/Logo/Logo-MirandaPropiedades.png';
+import Vendido1 from '../images/Inmobiliario/Vendido1.png';
+import Vendido2 from '../images/Inmobiliario/Vendido2.png';
+import Vendido3 from '../images/Inmobiliario/Vendido3.png';
+import Venta1 from '../images/Inmobiliario/Venta1.webp';
 
 const Properties = () => {
   const [filtroActivo, setFiltroActivo] = useState('Todos');
 
   const properties = [
-    { id: 1, price: 'UF 24.500', title: 'Loft Panorámico Vista al Mar, Sector Sur', beds: 3, baths: 4, parking: 2, tipo: 'Venta', image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop', featured: true },
-    { id: 2, price: '$850.000 / mes', title: 'Departamento Amoblado, Península de Cavancha', beds: 2, baths: 2, parking: 1, tipo: 'Arriendo', image: 'https://images.unsplash.com/photo-1600607687931-cece5ce21448?q=80&w=2070&auto=format&fit=crop', featured: false },
-    { id: 3, price: 'UF 18.200', title: 'Penthouse Exclusivo, Centro Financiero', beds: 2, baths: 2, parking: 1, tipo: 'Venta', image: 'https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2012&auto=format&fit=crop', featured: false },
-    { id: 4, price: '$1.200.000 / mes', title: 'Casa estilo Mediterráneo, Sector Norte', beds: 4, baths: 3, parking: 2, tipo: 'Arriendo', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop', featured: false }
+    { id: 4, price: 'CLP 200.000.000', title: 'Casa en Venta, Pasaje Playa el Saladero con avenida Padre Hurtado, Iquique', beds: 6, baths: 2, parking: 2, tipo: 'Venta', image: Venta1, featured: true },
+    { id: 2, price: 'CLP 87.000.000', title: 'Edificio Matiz Cavancha. Calle 18 de Septiembre, 1961, Iquique.', beds: 1, baths: 1, parking: 1, tipo: 'Vendido', image: Vendido2, featured: false },
+    { id: 3, price: 'CLP 150.000.000', title: 'Condominio Portal Los Heroes, Avenida Heroes De La Concepcion 2784 Torre B, Iquique.', beds: 3, baths: 2, parking: 1, tipo: 'Vendido', image: Vendido3, featured: false },
+    { id: 1, price: 'CLP 130.000.000', title: 'Edificio Amunategui. Calle Zegers 910, Iquique.', beds: 3, baths: 2, parking: 0, tipo: 'Vendido', image: Vendido1, featured: false },
   ];
 
   const propiedadesFiltradas = properties.filter(prop => {
@@ -19,7 +23,7 @@ const Properties = () => {
     return prop.tipo === filtroActivo;
   });
 
-  const opcionesFiltro = ['Todos', 'Venta', 'Arriendo'];
+  const opcionesFiltro = ['Todos', 'Venta', 'Arriendo', 'Vendido'];
 
   return (
     <div className="min-h-screen flex flex-col bg-background">

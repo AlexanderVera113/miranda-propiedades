@@ -1,7 +1,8 @@
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Bed, Bath, Car, MapPin, CheckCircle, MessageCircle } from 'lucide-react';
 import Footer from '../components/layout/Footer';
-import logoReal from '../images/Logo/Logo-MirandaPropiedades.png'; 
+import logoReal from '../images/Logo/Logo-MirandaPropiedades.png';
+import Venta1 from '../images/Inmobiliario/Venta1.webp';
 
 const PropertyDetail = () => {
   const { id } = useParams();
@@ -9,36 +10,47 @@ const PropertyDetail = () => {
   const properties = [
     {
       id: 1,
-      price: 'UF 24.500',
-      title: 'Loft Panorámico Vista al Mar, Sector Sur Iquique',
-      description: 'Espectacular loft con vista despejada al océano Pacífico. Terminaciones de lujo, cocina integrada equipada con electrodomésticos de alta gama, y terraza perimetral. El edificio cuenta con piscina infinity, gimnasio y seguridad 24/7.',
+      price: 'CLP 130.000.000',
+      title: 'Edificio Amunategui. Calle Zegers 910, Iquique.',
+      description: 'Espectacular departamento amoblado. con cocina integrada equipada con electrodomésticos, cuenta con bodega, terraza con hermosas vistas. El edificio cuenta con gimnasio, ascensor y seguridad 24/7.',
       beds: 3,
-      baths: 4,
-      parking: 2,
-      image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop',
-      features: ['Vista al mar', 'Piscina Infinity', 'Gimnasio', 'Seguridad 24/7', 'Cocina equipada'],
+      baths: 2,
+      parking: 0,
+      image: 'https://instagram.fscl9-2.fna.fbcdn.net/v/t51.82787-15/623300357_18097456193488687_6772982885351477760_n.webp?_nc_cat=108&ig_cache_key=Mjk4OTc5MDE4Mjk0MjMzMzMyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuNzIwLnNkci5yZWd1bGFyX3Bob3RvLkMzIn0%3D&_nc_ohc=AcczQqYmY9AQ7kNvwGh-5ip&_nc_oc=Adp5QcFhspILzs82734oicaNOTDxhJgG1iFn4jErpA8VUPdoMCsIfP0NXC_dx6LeiuHfLsu12UP_FK83wgj-Yccc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fscl9-2.fna&_nc_gid=BiMOr5gOEwhTdLTTTBEovg&_nc_ss=7a22e&oh=00_Af4HmEP8nKPrdHmr3E7rODr7dIX2bVU9IFLaB-7k_klrwQ&oe=6A1C449B',
+      features: ['Amoblado', 'Gimnasio', 'Seguridad 24/7', 'Cocina equipada'],
     },
     {
       id: 2,
-      price: 'UF 32.000',
-      title: 'Villa Contemporánea, Península de Cavancha',
-      description: 'Exclusiva propiedad de diseño arquitectónico moderno. Amplios espacios iluminados naturalmente, jardín privado, y acabados en mármol y maderas nobles. Ubicada en el sector más exclusivo y seguro de la ciudad.',
-      beds: 5,
-      baths: 5,
-      parking: 4,
-      image: 'https://images.unsplash.com/photo-1600607687931-cece5ce21448?q=80&w=2070&auto=format&fit=crop',
-      features: ['Jardín privado', 'Acabados en mármol', 'Sector exclusivo', 'Estacionamiento techado', 'Sala de cine'],
+      price: 'CLP 87.000.000',
+      title: 'Edificio Matiz Cavancha. Calle 18 de Septiembre, 1961, Iquique.',
+      description: 'Espectacular departamento amoblado. con cocina integrada equipada con electrodomésticos, cuenta con bodega y estacionamiento, terraza con hermosas vistas. El edificio cuenta con gimnasio, piscina, ascensor y seguridad 24/7.',
+      beds: 1,
+      baths: 1,
+      parking: 1,
+      image: 'https://instagram.fscl9-1.fna.fbcdn.net/v/t51.82787-15/642501452_17945213204978849_5138936922216918289_n.webp?_nc_cat=101&ig_cache_key=MzA4NzE1NTY0NTkyNTQxODAyMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuNzIwLnNkci5yZWd1bGFyX3Bob3RvLkMzIn0%3D&_nc_ohc=nooKOL-uX94Q7kNvwEU_Hjk&_nc_oc=AdqeRDU_QBu6-bh2BWsvCXsJ1C44yIqQnp48711uKYbOsO-oYlVVbZYN0s4_AEGTvtbnaWvluync_KVozareZG3D&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fscl9-1.fna&_nc_gid=BiMOr5gOEwhTdLTTTBEovg&_nc_ss=7a22e&oh=00_Af5a7eZlkXHL-ThBR18XUJ50_SpKxaa6kx84pFf2mUArsg&oe=6A1C5042',
+      features: ['Amoblado', 'Estacionamiento', 'Piscina', 'Bodega', 'Gimnasio'],
     },
     {
       id: 3,
-      price: 'UF 18.200',
-      title: 'Penthouse Exclusivo, Centro Financiero',
-      description: 'Diseñado para ejecutivos de alto nivel. Este penthouse ofrece comodidad, privacidad y una ubicación estratégica inmejorable. Cuenta con domótica integrada y acceso directo por ascensor privado.',
-      beds: 2,
+      price: 'CLP 150.000.000',
+      title: 'Condominio Portal Los Heroes, Avenida Heroes De La Concepcion 2784 Torre B, Iquique.',
+      description: 'Espectacular departamento ubicado en zona costera cerca de Casino, Mall y Supermercados. Cuenta con bodega y estacionamiento, terraza amplia con hermosas vistas. El edificio cuenta con gimnasio, piscina, ascensor y seguridad 24/7.',
+      beds: 3,
       baths: 2,
       parking: 1,
-      image: 'https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2012&auto=format&fit=crop',
-      features: ['Domótica', 'Ascensor privado', 'Cercano a comercio', 'Aire acondicionado', 'Terraza panorámica'],
+      image: 'https://instagram.fscl9-1.fna.fbcdn.net/v/t51.82787-15/651021431_17999156297738752_3667345412600662185_n.webp?_nc_cat=109&ig_cache_key=MzA4NzE3NjY1ODI2NDMyNTQ2Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuNzc4LnNkci5yZWd1bGFyX3Bob3RvLkMzIn0%3D&_nc_ohc=K7HMNMMWvAIQ7kNvwG-nq1-&_nc_oc=AdqxqFcdEB7-BRltN45HD8Wgq0STQBVI19Ja591BduMft-NQfpQqwOOcmgDQPHfloL8gonKVljCXo30vO0LMd_po&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fscl9-1.fna&_nc_gid=BiMOr5gOEwhTdLTTTBEovg&_nc_ss=7a22e&oh=00_Af4wC9KGyb1f38lZRItGF7Nsk0xXL0VN22Io6HivUpLghg&oe=6A1C40CA',
+      features: ['Piscina', 'Terraza Amplia', 'Cercano a comercios', 'Estacionamiento', 'Bodega', 'Espectacular Vista a la Costa'],
+    },
+        {
+      id: 4,
+      price: 'CLP 200.000.000',
+      title: 'Casa en Venta. Pasaje Playa el Saladero con avenida Padre Hurtado, Iquique',
+      description: 'Amplia y espectacular casa de 2 pisos, ideal para familias numerosas. Cuenta con 6 confortables dormitorios, 2 baños, living, comedor, cocina tradicional y una práctica bodega. En su exterior, ofrece un acogedor antejardín, un pequeño patio interior y capacidad para 2 estacionamientos. Propiedad de único dueño y sin deudas (ampliación no regularizada).',
+      beds: 6,
+      baths: 2,
+      parking: 2,
+      image: Venta1,
+      features: ['6 Dormitorios', 'Estacionamientos', 'Antejardin', 'Patio Interior', 'Bodega', 'Unico Dueño', '🚫 Ampliación no regularizada'],
     }
   ];
 
