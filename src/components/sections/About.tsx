@@ -43,9 +43,9 @@ const About = () => {
             
             <p className="text-gray-600 font-light leading-relaxed mb-10 text-lg">
               Con un profundo conocimiento del mercado en Iquique y la Región de Tarapacá, 
-              mi compromiso es brindarte una asesoría integral, profesional y orientada a resultados. 
-              Ya sea que busques vender, arrendar o maximizar tus ingresos con Airbnb, 
-              garantizamos proteger y rentabilizar tu patrimonio como si fuera nuestro.
+              mi compromiso es brindarle una asesoría integral, profesional y orientada a resultados. 
+              Ya sea que busque vender, arrendar o maximizar sus ingresos en Airbnb, 
+              garantizamos proteger y rentabilizar su propiedad como si fuera nuestro.
             </p>
 
             {/* Grilla de atributos de confianza */}

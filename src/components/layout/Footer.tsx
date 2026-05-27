@@ -20,7 +20,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-white/60 font-light max-w-xs text-sm leading-relaxed mt-2">
-              Gestión inmobiliaria de excelencia, administración de Airbnb y corretaje patrimonial en la Región de Tarapacá.
+              Broker inmobiliario y corredor de propiedades, administración en portal Airbnb y coordinación de mantenimiento y servicios check-in/ check-out en arriendos vacacionales Airbnb.
             </p>
           </div>
 

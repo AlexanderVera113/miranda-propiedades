@@ -29,7 +29,7 @@ const Services = () => {
     },
     {
       title: 'Administración Airbnb',
-      description: 'Anuncio, precios, reservas, limpieza y atención a pasajeros 24/7.',
+      description: 'Anuncios, precios, reservas, limpieza y atención a pasajeros 24/7.',
       icon: <BedDouble size={40} strokeWidth={1.5} />,
     },
   ];
@@ -41,11 +41,11 @@ const Services = () => {
         {/* Encabezado de la sección */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-serif text-primary font-bold mb-4">
-            ¿Qué Hago?
+            Nuestra Misión
           </h2>
           <div className="w-24 h-1 bg-secondary mx-auto"></div>
           <p className="mt-6 text-primary-light max-w-2xl mx-auto text-lg font-light">
-            Soluciones integrales para la gestión, rentabilización y protección de su patrimonio inmobiliario en la Región de Tarapacá.
+            Nuestra mision principal es brindarle soluciones integrales para la gestión, rentabilización y protección de su patrimonio inmobiliario en la Región de Tarapacá.
           </p>
         </div>
 

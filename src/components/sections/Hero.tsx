@@ -28,7 +28,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-lg md:text-xl lg:text-2xl text-white font-sans font-light tracking-wider uppercase mb-10 max-w-3xl mx-auto opacity-90">
-          Corretaje de Propiedades y Gestión Airbnb Regional
+          Broker inmobiliario y Gestión Airbnb en Iquique.
         </p>
         
         {/* Botones de Acción */}
