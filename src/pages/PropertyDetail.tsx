@@ -6,7 +6,6 @@ import logoReal from '../images/Logo/Logo-MirandaPropiedades.png';
 const PropertyDetail = () => {
   const { id } = useParams();
 
-  // Aquí en el futuro conectarás tu base de datos. Por ahora usamos la misma data de prueba.
   const properties = [
     {
       id: 1,
@@ -43,7 +42,6 @@ const PropertyDetail = () => {
     }
   ];
 
-  // Buscamos la propiedad que coincida con el ID de la URL
   const property = properties.find(p => p.id === Number(id));
 
   if (!property) {
@@ -57,34 +55,32 @@ const PropertyDetail = () => {
     );
   }
 
-  // Mensaje predeterminado para WhatsApp con el nombre de la propiedad
   const whatsappMessage = `Hola Elizabeth, me interesa obtener más información sobre la propiedad: ${property.title} (${property.price}).`;
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      {/* Navegación */}
-<nav className="w-full bg-white border-b border-gray-200 py-2 sticky top-0 z-50">
+      
+      {/* Navegación corregida */}
+      <nav className="w-full bg-white border-b border-gray-200 py-2 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           
-          {/* Logo alineado */}
-          <Link 
-            to="/" 
-            className="flex items-center gap-3 cursor-pointer"
-          >
-            <img 
-              src={logoReal} 
-              alt="Logo Miranda Propiedades" 
-              className="h-14 w-auto object-contain" 
-            />
-            <span className="font-serif font-bold text-primary text-lg tracking-tight uppercase hidden sm:block">
-              Miranda Propiedades
-            </span>
-          </Link>
+          <div className="flex items-center gap-6">
+            <Link to="/propiedades" className="flex items-center gap-1 text-primary hover:text-secondary transition-colors">
+              <ArrowLeft size={20} />
+              <span className="text-sm font-medium hidden sm:block">Volver</span>
+            </Link>
+            
+            <Link to="/" className="flex items-center gap-3 cursor-pointer">
+              <img src={logoReal} alt="Logo Miranda Propiedades" className="h-14 w-auto object-contain" />
+              <span className="font-serif font-bold text-primary text-lg tracking-tight uppercase hidden sm:block">
+                Miranda Propiedades
+              </span>
+            </Link>
+          </div>
 
-          {/* Botón de acción alineado */}
-<div>
+          <div>
             <a 
-                href="https://wa.me/56989950568?text=Hola%20Elizabeth,%20me%20gustaría%20agendar%20una%20cita." 
+                href={`https://wa.me/56989950568?text=${encodeURIComponent(whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-white px-6 py-2.5 rounded font-medium hover:bg-secondary-dark transition-all duration-300 shadow-md cursor-pointer inline-block"
@@ -96,7 +92,6 @@ const PropertyDetail = () => {
       </nav>
 
       <main className="flex-grow pb-24">
-        {/* Imagen Principal */}
         <div className="w-full h-[50vh] md:h-[65vh] relative bg-primary">
           <img src={property.image} alt={property.title} className="w-full h-full object-cover opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
@@ -105,7 +100,6 @@ const PropertyDetail = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-10">
           <div className="bg-white p-8 md:p-12 shadow-xl border border-gray-100 flex flex-col md:flex-row gap-12">
             
-            {/* Columna Detalles */}
             <div className="md:w-2/3">
               <div className="flex items-center gap-2 text-gray-500 mb-4">
                 <MapPin size={18} className="text-secondary" />
@@ -139,7 +133,6 @@ const PropertyDetail = () => {
               </div>
             </div>
 
-            {/* Columna Precio y Contacto (Panel Lateral) */}
             <div className="md:w-1/3">
               <div className="bg-surface p-8 border border-gray-200 sticky top-24">
                 <p className="text-sm text-gray-500 uppercase tracking-widest mb-2 font-bold">Valor de la Propiedad</p>
@@ -159,7 +152,6 @@ const PropertyDetail = () => {
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </main>
