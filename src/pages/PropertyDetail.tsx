@@ -56,8 +56,8 @@ const PropertyDetail = () => {
             {
       id: 5,
       price: 'CLP 15.000.000 / Mes',
-      title: 'Hotel En Arriendo Mensual Para Empresas Mineras. Bernardo OHiggins 944, Iquique.',
-      description: 'Excelente hotel amoblado y operativo disponible para arriendo mensual, ideal para empresas mineras. Ubicado estratégicamente en pleno centro de Iquique, la propiedad cuenta con 20 habitaciones completamente equipadas con baño privado, TV, calefont y Wi-Fi. Dispone de una cafetería para 20 personas, servicio de recepción con personal contratado y 10 estacionamientos con cámaras de vigilancia. Facturación directa de inmobiliaria.',
+      title: 'Hotel En Arriendo Anual Para Empresas Mineras. Bernardo OHiggins 944, Iquique.',
+      description: 'Excelente hotel amoblado y operativo disponible para arriendo anual, ideal para empresas mineras. Ubicado estratégicamente en pleno centro de Iquique, la propiedad cuenta con 20 habitaciones completamente equipadas con baño privado, TV, calefont y Wi-Fi. Dispone de una cafetería para 20 personas, servicio de recepción con personal contratado y 10 estacionamientos con cámaras de vigilancia. Facturación directa de inmobiliaria.',
       beds: 20,
       baths: 22,
       parking: 10,
