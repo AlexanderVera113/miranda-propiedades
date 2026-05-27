@@ -1,4 +1,4 @@
-import logoReal from '../../images/logo/Logo-MirandaPropiedades.png'; // Ajusta esta ruta si es diferente
+import logoReal from '../../images/Logo/Logo-MirandaPropiedades.png'; // Ajusta esta ruta si es diferente
 
 const Footer = () => {
   return (
