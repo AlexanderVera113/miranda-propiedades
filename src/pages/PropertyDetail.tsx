@@ -4,6 +4,7 @@ import Footer from '../components/layout/Footer';
 import logoReal from '../images/Logo/Logo-MirandaPropiedades.png';
 import Venta1 from '../images/Inmobiliario/Venta1.webp';
 import Arriendo1 from '../images/Inmobiliario/Arriendo1.webp';
+import CasaLaSerena from '../images/Inmobiliario/Casa_La_Serena1.jpeg'
 
 const PropertyDetail = () => {
   const { id } = useParams();
@@ -55,14 +56,25 @@ const PropertyDetail = () => {
     },
             {
       id: 5,
-      price: 'CLP 15.000.000 / Mes',
-      title: 'Hotel En Arriendo Anual Para Empresas Mineras. Bernardo OHiggins 944, Iquique.',
-      description: 'Excelente hotel amoblado y operativo disponible para arriendo anual, ideal para empresas mineras. Ubicado estratégicamente en pleno centro de Iquique, la propiedad cuenta con 20 habitaciones completamente equipadas con baño privado, TV, calefont y Wi-Fi. Dispone de una cafetería para 20 personas, servicio de recepción con personal contratado y 10 estacionamientos con cámaras de vigilancia. Facturación directa de inmobiliaria.',
+      price: 'CLP 13.000.000',
+      title: 'Residencia Corporativa para Empresas Mineras y Contratistas, Bernardo OHiggins 944, Iquique.',
+      description: 'Valor de 13.000.000 + Mes de garantia + 50% Comisión de Corredora. Operativa e implementada para alojamiento de personal. 20 habitaciones con baño privado, capacidad para 44 trabajadores, tv 32", wifi, agua caliente, desayuno, comedor habilitado con Tv 55¨ cocina y 2 baños, recepción 24/7, camaras de seguridad, 7 estacionamientos,  extinguidores, señaléticas de seguridad laboral y documentación al día. ',
       beds: 20,
       baths: 22,
       parking: 10,
       image: Arriendo1,
-      features: ['20 Habitaciones Con Baño Privado', '10 Estacionamientos Con Vigilancia', 'Cafeteria', 'TV', 'Wi-Fi', 'Calefont'],
+      features: ['20 Habitaciones con baño privado', '10 Estacionamientos Con Vigilancia', 'Disponible para contrato de largo plazo', 'Se entrega factura', 'Requisitos: Arriendo comercial para empresas.'],
+    },
+                {
+      id: 6,
+      price: 'CLP 230.000.000',
+      title: '2 Casas en Venta en el mismo terreno, La Arboleda, La Serena',
+      description: 'Se vende propiedad esquina que cuenta con dos casas de dos pisos en un mismo terreno, ubicada en el cotizado sector de Barrio Universitario (Villa La Arboleda, calle Ulmo), una zona de alta plusvalía en Serena Oriente rodeada de servicios, colegios, universidades y supermercados (Jumbo Ulriksen). La propiedad ofrece un antejardín y 2 estacionamientos interiores. La Casa A (construcción original) cuenta con 3 dormitorios, 2 baños, living comedor, cocina, lavandería y bodega. La Casa B (ampliación no regularizada con distribución idéntica) ofrece 3 dormitorios, 2 baños, living comedor, cocina y un patio pequeño. Propiedad de único dueño y sin deudas.',
+      beds: 6,
+      baths: 4,
+      parking: 2,
+      image: CasaLaSerena,
+      features: ['2 Casas en el mismo terreno', 'Estacionamiento interior con espacio para 2 Vehiculos.', 'Sector Tranquilo, Barrio Universitario', 'Casa Esquina', 'Cercano a Comercios, Bencineras, Colegios/Universidades.', '🚫 Ampliacion no Regularizada.'],
     }
   ];
 
