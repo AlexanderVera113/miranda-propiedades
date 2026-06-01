@@ -14,7 +14,7 @@ const Properties = () => {
   const [filtroActivo, setFiltroActivo] = useState('Todos');
 
   const properties = [
-    { id: 6, price: 'CLP 230.000.000', title: '2 Casas en Venta en el mismo terreno, Ulmo 1939, La Serena', beds: 6, baths: 4, parking: 2, tipo: 'Venta', image: CasaLaSerena, featured: true },
+    { id: 6, price: 'CLP 230.000.000', title: '2 Casas en Venta en el mismo terreno, Villa La Arboleda, La Serena', beds: 6, baths: 4, parking: 2, tipo: 'Venta', image: CasaLaSerena, featured: true },
     { id: 5, price: 'CLP 13.000.000', title: 'Residencia Corporativa para Empresas Mineras y Contratistas, Bernardo OHiggins 944, Iquique.', beds: 20, baths: 22, parking: 10, tipo: 'Arriendo', image: HotelCorona, featured: true },
     { id: 4, price: 'CLP 200.000.000', title: 'Casa en Venta, Pasaje Playa el Saladero con avenida Padre Hurtado, Iquique', beds: 6, baths: 2, parking: 2, tipo: 'Venta', image: Venta1, featured: true },
     { id: 2, price: 'CLP 87.000.000', title: 'Edificio Matiz Cavancha. Calle 18 de Septiembre, 1961, Iquique.', beds: 1, baths: 1, parking: 1, tipo: 'Vendido', image: Vendido2, featured: false },
