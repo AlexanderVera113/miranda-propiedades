@@ -1,10 +1,18 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Bed, Bath, Car, MapPin, CheckCircle, MessageCircle } from 'lucide-react';
+import { ArrowLeft, Bed, Bath, Car, CheckCircle, MessageCircle, HomeIcon } from 'lucide-react';
 import Footer from '../components/layout/Footer';
 import logoReal from '../images/Logo/Logo-MirandaPropiedades.png';
 import Venta1 from '../images/Inmobiliario/Venta1.webp';
 import Arriendo1 from '../images/Inmobiliario/Arriendo1.webp';
-import CasaLaSerena from '../images/Inmobiliario/Casa_La_Serena1.jpeg'
+import CasaLaSerena from '../images/Inmobiliario/Casa_La_Serena1.webp'
+import CondominioTadeoHaenke from '../images/Inmobiliario/CondominioTadeoHaenke2.webp'
+import CostaAzul from '../images/Inmobiliario/CostaAzul22.webp'
+import PuertoVallarta from '../images/Inmobiliario/PuertoVallarta2.webp'
+import EdificioAmunategui from '../images/Inmobiliario/EdificioAmunategui.webp'
+import Vendido1 from '../images/Inmobiliario/Vendido1.webp'
+import Vendido2 from '../images/Inmobiliario/Vendido2.webp'
+import Vendido3 from '../images/Inmobiliario/Vendido3.webp'
+import MatizCavancha from '../images/Inmobiliario/matizcavancha.webp'
 
 const PropertyDetail = () => {
   const { id } = useParams();
@@ -13,12 +21,12 @@ const PropertyDetail = () => {
     {
       id: 1,
       price: 'CLP 130.000.000',
-      title: 'Edificio Amunategui. Calle Zegers 910, Iquique.',
+      title: 'Edificio Amunategui, Calle Zegers 910, Iquique.',
       description: 'Espectacular departamento amoblado. con cocina integrada equipada con electrodomésticos, cuenta con bodega, terraza con hermosas vistas. El edificio cuenta con gimnasio, ascensor y seguridad 24/7.',
       beds: 3,
       baths: 2,
       parking: 0,
-      image: 'https://instagram.fscl9-2.fna.fbcdn.net/v/t51.82787-15/623300357_18097456193488687_6772982885351477760_n.webp?_nc_cat=108&ig_cache_key=Mjk4OTc5MDE4Mjk0MjMzMzMyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuNzIwLnNkci5yZWd1bGFyX3Bob3RvLkMzIn0%3D&_nc_ohc=AcczQqYmY9AQ7kNvwGh-5ip&_nc_oc=Adp5QcFhspILzs82734oicaNOTDxhJgG1iFn4jErpA8VUPdoMCsIfP0NXC_dx6LeiuHfLsu12UP_FK83wgj-Yccc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fscl9-2.fna&_nc_gid=BiMOr5gOEwhTdLTTTBEovg&_nc_ss=7a22e&oh=00_Af4HmEP8nKPrdHmr3E7rODr7dIX2bVU9IFLaB-7k_klrwQ&oe=6A1C449B',
+      image: Vendido1,
       features: ['Amoblado', 'Gimnasio', 'Seguridad 24/7', 'Cocina equipada'],
     },
     {
@@ -29,7 +37,7 @@ const PropertyDetail = () => {
       beds: 1,
       baths: 1,
       parking: 1,
-      image: 'https://instagram.fscl9-1.fna.fbcdn.net/v/t51.82787-15/642501452_17945213204978849_5138936922216918289_n.webp?_nc_cat=101&ig_cache_key=MzA4NzE1NTY0NTkyNTQxODAyMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuNzIwLnNkci5yZWd1bGFyX3Bob3RvLkMzIn0%3D&_nc_ohc=nooKOL-uX94Q7kNvwEU_Hjk&_nc_oc=AdqeRDU_QBu6-bh2BWsvCXsJ1C44yIqQnp48711uKYbOsO-oYlVVbZYN0s4_AEGTvtbnaWvluync_KVozareZG3D&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fscl9-1.fna&_nc_gid=BiMOr5gOEwhTdLTTTBEovg&_nc_ss=7a22e&oh=00_Af5a7eZlkXHL-ThBR18XUJ50_SpKxaa6kx84pFf2mUArsg&oe=6A1C5042',
+      image: Vendido2,
       features: ['Amoblado', 'Estacionamiento', 'Piscina', 'Bodega', 'Gimnasio'],
     },
     {
@@ -40,7 +48,7 @@ const PropertyDetail = () => {
       beds: 3,
       baths: 2,
       parking: 1,
-      image: 'https://instagram.fscl9-1.fna.fbcdn.net/v/t51.82787-15/651021431_17999156297738752_3667345412600662185_n.webp?_nc_cat=109&ig_cache_key=MzA4NzE3NjY1ODI2NDMyNTQ2Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuNzc4LnNkci5yZWd1bGFyX3Bob3RvLkMzIn0%3D&_nc_ohc=K7HMNMMWvAIQ7kNvwG-nq1-&_nc_oc=AdqxqFcdEB7-BRltN45HD8Wgq0STQBVI19Ja591BduMft-NQfpQqwOOcmgDQPHfloL8gonKVljCXo30vO0LMd_po&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fscl9-1.fna&_nc_gid=BiMOr5gOEwhTdLTTTBEovg&_nc_ss=7a22e&oh=00_Af4wC9KGyb1f38lZRItGF7Nsk0xXL0VN22Io6HivUpLghg&oe=6A1C40CA',
+      image: Vendido3,
       features: ['Piscina', 'Terraza Amplia', 'Cercano a comercios', 'Estacionamiento', 'Bodega', 'Espectacular Vista a la Costa'],
     },
         {
@@ -56,25 +64,88 @@ const PropertyDetail = () => {
     },
             {
       id: 5,
-      price: 'CLP 13.000.000',
-      title: 'Residencia Corporativa para Empresas Mineras y Contratistas, Bernardo OHiggins 944, Iquique.',
-      description: 'Valor de 13.000.000 + Mes de garantia + 50% Comisión de Corredora. Operativa e implementada para alojamiento de personal. 20 habitaciones con baño privado, capacidad para 44 trabajadores, tv 32", wifi, agua caliente, desayuno, comedor habilitado con Tv 55¨ cocina y 2 baños, recepción 24/7, camaras de seguridad, 7 estacionamientos,  extinguidores, señaléticas de seguridad laboral y documentación al día. ',
+      price: 'CLP 12.000.000',
+      title: 'Residencia Comercial en Arriendo para Empresas Mineras y Contratistas, Bernardo OHiggins 944, Iquique.',
+      description: 'Residencia comercial en arriendo completamente operativa e implementada para el alojamiento de personal, ideal para empresas mineras, contratistas y prestadores de servicios. Ubicada en Bernardo OHiggins 944, Iquique, ofrece una solución habitacional lista para funcionar con capacidad para 44 trabajadores distribuidos en 20 habitaciones con baño privado, TV de 32", WiFi y agua caliente. Destaca por sus completos servicios orientados al bienestar del equipo, incluyendo desayuno, personal de limpieza, comedor habilitado con TV de 55", cocina equipada, gimnasio y sala de eventos. Además, garantiza seguridad con recepción 24/7, cámaras de vigilancia, 7 estacionamientos y señalética laboral. El valor de arriendo es de $12.000.000 mensuales (conversable), exclusivo para empresas con opción a contrato de largo plazo (se entrega factura). Requisitos: 1 mes de garantía y 50% de comisión de corretaje.',
       beds: 20,
       baths: 22,
-      parking: 10,
+      parking: 7,
       image: Arriendo1,
-      features: ['20 Habitaciones con baño privado', '10 Estacionamientos Con Vigilancia', 'Disponible para contrato de largo plazo', 'Se entrega factura', 'Requisitos: Arriendo comercial para empresas.'],
+      features: ['20 Habitaciones con baño privado', '7 Estacionamientos Con Vigilancia', 'Disponible para contrato de largo plazo', 'Se entrega factura', 'Requisitos: Arriendo comercial para empresas.'],
     },
                 {
       id: 6,
-      price: 'CLP 230.000.000',
-      title: '2 Casas en Venta en el mismo terreno, La Arboleda, La Serena',
-      description: 'Se vende propiedad esquina que cuenta con dos casas de dos pisos en un mismo terreno, ubicada en el cotizado sector de Barrio Universitario (Villa La Arboleda, calle Ulmo), una zona de alta plusvalía en Serena Oriente rodeada de servicios, colegios, universidades y supermercados (Jumbo Ulriksen). La propiedad ofrece un antejardín y 2 estacionamientos interiores. La Casa A (construcción original) cuenta con 3 dormitorios, 2 baños, living comedor, cocina, lavandería y bodega. La Casa B (ampliación no regularizada con distribución idéntica) ofrece 3 dormitorios, 2 baños, living comedor, cocina y un patio pequeño. Propiedad de único dueño y sin deudas.',
+      price: 'CLP 250.000.000',
+      title: '2 Casas en Venta en el mismo terreno, Ulmo 1939, La Arboleda, La Serena',
+      description: '¡Una excelente inversión en una ubicación privilegiada! Se vende propiedad esquina que cuenta con dos casas en un mismo terreno, ubicada en el consolidado sector de Barrio Universitario (Calle Ulmo 1939, Villa La Arboleda, La Serena). Por su amplitud y conectividad, es ideal para uso habitacional, arriendos, empresas, oficinas o consultas profesionales. La Casa A (construcción original) cuenta con 3 dormitorios, 2 baños, living, comedor, cocina, lavandería, bodega, patio y 2 estacionamientos interiores. La Casa B (ampliación no regularizada de distribución similar) ofrece 3 dormitorios, 2 baños, living, comedor, cocina y patio. La propiedad destaca porque se entrega completamente amoblada, es de único dueño, sin deudas y con su documentación al día.',
       beds: 6,
       baths: 4,
       parking: 2,
       image: CasaLaSerena,
       features: ['2 Casas en el mismo terreno', 'Estacionamiento interior con espacio para 2 Vehiculos.', 'Sector Tranquilo, Barrio Universitario', 'Casa Esquina', 'Cercano a Comercios, Bencineras, Colegios/Universidades.', '🚫 Ampliacion no Regularizada.'],
+    },
+                    {
+      id: 7,
+      price: 'UF 4.500',
+      secondaryprice: 'CLP 183.642,480',
+      title: 'Condominio Tadeo Haenke, Av. Tadeo Haenke 2221, Iquique',
+      description: 'Excelente oportunidad de inversión o para vivir en el corazón de Iquique. Este cómodo departamento de 77 m² se encuentra en el Condominio Tadeo Haenke (Av. Tadeo Haenke 2221). Cuenta con 3 dormitorios, 2 baños, living-comedor, cocina, un agradable balcón, bodega y estacionamiento. El edificio ofrece excelentes amenidades para sus residentes, incluyendo conserjería, gimnasio y sala de eventos. Todo esto ubicado en una zona de alta plusvalía, con acceso directo a supermercados, bancos, restaurantes, locomoción y todos los servicios necesarios.',
+      beds: 3,
+      baths: 2,
+      parking: 1,
+      image: CondominioTadeoHaenke,
+      features: ['Conserjeria', 'Sala de Eventos', 'Balcón', 'Bodega', 'Estacionamiento', 'Gimnasio'],
+    },
+                        {
+      id: 8,
+      price: 'UF 5.100',
+      secondaryprice: 'CLP 208.128.144',
+      title: 'Edificio Costa Azul 2, Arturo Fernández 2098, Iquique',
+      description: 'Excelente oportunidad de inversión o para vivir en el cotizado sector turístico de Iquique. Este amplio departamento de 100 m² se encuentra en el Edificio Costa Azul 2 (Calle Arturo Fernández 2098). Cuenta con 4 cómodos dormitorios, 2 baños, espacioso living-comedor, cocina, un agradable balcón, además de incluir bodega y estacionamiento. El edificio ofrece completas amenidades para sus residentes: conserjería 24/7, gimnasio, sala de eventos, quinchos y lavandería. Su ubicación es inmejorable, a pasos de Playa Cavancha, el Mall, supermercados y todos los servicios, lo que lo convierte en una opción ideal tanto para residencia familiar como para inversión con alto potencial para Airbnb.',
+      beds: 4,
+      baths: 2,
+      parking: 1,
+      image: CostaAzul,
+      features: ['Conserjeria', 'Sala de Eventos', 'Balcón', 'Bodega', 'Estacionamiento', 'Gimnasio'],
+    },
+                            {
+      id: 9,
+      price: 'UF 2.490',
+      secondaryprice: 'CLP 101.615.506',
+      thirdprice: '+ 2% Comisión de Venta',
+      title: 'Edificio Puerto Vallarta, Arturo Fernández 2011, Iquique',
+      description: 'Excelente oportunidad de inversión o para vivir en el cotizado sector turístico de Iquique. Este acogedor y funcional departamento de 39 m² se encuentra ubicado en el Edificio Puerto Vallarta (Arturo Fernández 2011). Cuenta con 1 dormitorio, 1 baño, living-comedor y un agradable balcón, además de incluir bodega y estacionamiento. El edificio brinda seguridad y comodidad con conserjería 24/7, sala de eventos y quinchos. Destaca por su inmejorable ubicación a pasos de Playa Cavancha, el Mall, supermercados, bancos, restaurantes y locomoción. Es una opción ideal tanto para quienes buscan una vivienda cómoda como para inversionistas que buscan alta rentabilidad a través de plataformas como Airbnb.',
+      beds: 1,
+      baths: 1,
+      parking: 1,
+      image: PuertoVallarta,
+      features: ['Sector Turistico', 'Sala de Eventos', 'Balcón', 'Bodega', 'Estacionamiento', 'Conserjeria 24/7'],
+    },
+        {
+      id: 10,
+      price: 'UF 2.500',
+      secondaryprice: 'CLP 102.024.000',
+      thirdprice: '+ 2% Comisión de Venta',
+      title: 'Edificio Amunategui, Calle Zegers 910, Iquique.',
+      description: 'Excelente oportunidad de inversión o para vivir en el corazón de Iquique. Este funcional departamento de 47 m² se encuentra ubicado en el Edificio Amunátegui (Zegers 910, pleno centro). Su distribución contempla 1 dormitorio, 1 baño, living-comedor, cocina y un cómodo balcón. El edificio ofrece espacios pensados para el bienestar y la seguridad de sus residentes, incluyendo conserjería 24/7, gimnasio y sala de eventos. Destaca por su excelente conectividad y ubicación, muy cercano al Colegio Corona School, supermercados, bancos, restaurantes, comercio y locomoción. Es una alternativa ideal tanto para quienes buscan una vivienda cómoda como para inversionistas.',
+      beds: 1,
+      baths: 1,
+      parking: 0,
+      image: EdificioAmunategui,
+      features: ['Balcón', 'Gimnasio', 'Conserjeria 24/7', 'Cocina equipada', 'Gimnasio', 'Sala de Eventos'],
+    },
+        {
+      id: 11,
+      price: 'UF 2.800',
+      secondaryprice: 'CLP 114.268.000',
+      thirdprice: '+ 2% Comisión de Venta',
+      title: 'Edificio Matiz Cavancha. Calle 18 de Septiembre, 1961, Iquique.',
+      description: 'Excelente oportunidad de inversión o para vivir en el cotizado sector turístico de Iquique. Este funcional departamento de 37 m² se ubica en el Edificio Matiz Cavancha (Calle 18 de Septiembre 1961). Su distribución contempla 1 dormitorio, 1 baño, living-comedor, cocina y un cómodo balcón, además de incluir estacionamiento subterráneo y bodega. El edificio ofrece completas instalaciones para sus residentes, como conserjería 24/7, gimnasio, sala de eventos y quinchos. Su ubicación es inmejorable, a pasos de Playa Cavancha, el Mall, supermercados, bancos, restaurantes y todo tipo de comercio. Es una opción perfecta para quienes buscan una vivienda cómoda o una propiedad con gran potencial de rentabilidad vía Airbnb.',
+      beds: 1,
+      baths: 1,
+      parking: 1,
+      image: MatizCavancha,
+      features: ['Quincho', 'Estacionamiento', 'Piscina', 'Bodega', 'Gimnasio'],
     }
   ];
 
@@ -138,8 +209,8 @@ const PropertyDetail = () => {
             
             <div className="md:w-2/3">
               <div className="flex items-center gap-2 text-gray-500 mb-4">
-                <MapPin size={18} className="text-secondary" />
-                <span className="text-sm font-medium tracking-wide uppercase">Iquique, Región de Tarapacá</span>
+                <HomeIcon size={18} className="text-secondary" />
+                <span className="text-sm font-medium tracking-wide uppercase">Propiedades Traveling</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-serif text-primary mb-6 leading-tight">{property.title}</h1>
               
@@ -172,7 +243,9 @@ const PropertyDetail = () => {
             <div className="md:w-1/3">
               <div className="bg-surface p-8 border border-gray-200 sticky top-24">
                 <p className="text-sm text-gray-500 uppercase tracking-widest mb-2 font-bold">Valor de la Propiedad</p>
-                <h2 className="text-4xl font-serif text-secondary mb-8">{property.price}</h2>
+                <h2 className="text-4xl font-serif text-secondary mb-4">{property.price}</h2>
+                <h2 className="text-2xl font-serif text-secondary mb-4">{property.secondaryprice}</h2>
+                <h2 className="text-2xl font-serif text-secondary mb-4">{property.thirdprice}</h2>
                 
                 <a
                   href={`https://wa.me/56989950568?text=${encodeURIComponent(whatsappMessage)}`}

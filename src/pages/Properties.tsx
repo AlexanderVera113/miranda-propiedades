@@ -3,19 +3,29 @@ import { Bed, Bath, Car, ArrowLeft, Search, Filter } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/layout/Footer';
 import logoReal from '../images/Logo/Logo-MirandaPropiedades.png';
-import Vendido1 from '../images/Inmobiliario/Vendido1.png';
-import Vendido2 from '../images/Inmobiliario/Vendido2.png';
-import Vendido3 from '../images/Inmobiliario/Vendido3.png';
+import Vendido1 from '../images/Inmobiliario/Vendido1.webp';
+import Vendido2 from '../images/Inmobiliario/Vendido2.webp';
+import Vendido3 from '../images/Inmobiliario/Vendido3.webp';
 import Venta1 from '../images/Inmobiliario/Venta1.webp';
-import HotelCorona from '../images/Inmobiliario/HotelCorona.png';
-import CasaLaSerena from '../images/Inmobiliario/Casa_La_Serena1.jpeg'
+import HotelCorona from '../images/Inmobiliario/HotelCorona.webp';
+import CasaLaSerena from '../images/Inmobiliario/Casa_La_Serena1.webp'
+import CondominioTadeoHaenke from '../images/Inmobiliario/CondominioTadeoHaenke.webp'
+import CostaAzul2 from '../images/Inmobiliario/CostaAzul2.webp'
+import PuertoVallarta from '../images/Inmobiliario/PuertoVallarta.webp'
+import EdificioAmunategui from '../images/Inmobiliario/EdificioAmunategui.webp'
+import MatizCavancha from '../images/Inmobiliario/matizcavancha.webp'
 
 const Properties = () => {
   const [filtroActivo, setFiltroActivo] = useState('Todos');
 
   const properties = [
-    { id: 6, price: 'CLP 230.000.000', title: '2 Casas en Venta en el mismo terreno, Villa La Arboleda, La Serena', beds: 6, baths: 4, parking: 2, tipo: 'Venta', image: CasaLaSerena, featured: true },
-    { id: 5, price: 'CLP 13.000.000', title: 'Residencia Corporativa para Empresas Mineras y Contratistas, Bernardo OHiggins 944, Iquique.', beds: 20, baths: 22, parking: 10, tipo: 'Arriendo', image: HotelCorona, featured: true },
+    { id: 11, price: 'UF 2.800', secondprice: 'CLP 114.268.000 + 2% Comisión Venta', title: 'Edificio Matiz Cavancha. Calle 18 de Septiembre, 1961, Iquique.', beds: 1, baths: 1, parking: 1, tipo: 'Venta', image: MatizCavancha, featured: true },
+    { id: 10, price: 'UF 2.500', secondprice: 'CLP 102.024.000 + 2% Comisión Venta', title: 'Edificio Amunategui. Calle Zegers 910, Iquique.', beds: 1, baths: 1, parking: 0, tipo: 'Venta', image: EdificioAmunategui, featured: true },
+    { id: 9, price: 'UF 2.490', secondprice: 'CLP 101.615.506 + 2% Comisión Venta', title: 'Edificio Puerto Vallarta, Arturo Fernández 2011, Iquique', beds: 1, baths: 1, parking: 1, tipo: 'Venta', image: PuertoVallarta, featured: true },
+    { id: 8, price: 'UF 5.100', secondprice: 'CLP 208.128.144', title: 'Edificio Costa Azul 2, Arturo Fernández 2098, Iquique', beds: 4, baths: 2, parking: 1, tipo: 'Venta', image: CostaAzul2, featured: true },
+    { id: 7, price: 'UF 4.500', secondprice: 'CLP 183.642.480', title: 'Condominio Tadeo Haenke, Av. Tadeo Haenke 2221, Iquique', beds: 3, baths: 2, parking: 1, tipo: 'Venta', image: CondominioTadeoHaenke, featured: true },
+    { id: 6, price: 'CLP 250.000.000', title: '2 Casas en Venta en el mismo terreno, Ulmo 1939, La Arboleda, La Serena', beds: 6, baths: 4, parking: 2, tipo: 'Venta', image: CasaLaSerena, featured: true },
+    { id: 5, price: 'CLP 12.000.000', title: 'Residencia Comercial en Arriendo para Empresas Mineras y Contratistas, Bernardo OHiggins 944, Iquique.', beds: 20, baths: 22, parking: 7, tipo: 'Arriendo', image: HotelCorona, featured: true },
     { id: 4, price: 'CLP 200.000.000', title: 'Casa en Venta, Pasaje Playa el Saladero con avenida Padre Hurtado, Iquique', beds: 6, baths: 2, parking: 2, tipo: 'Venta', image: Venta1, featured: true },
     { id: 2, price: 'CLP 87.000.000', title: 'Edificio Matiz Cavancha. Calle 18 de Septiembre, 1961, Iquique.', beds: 1, baths: 1, parking: 1, tipo: 'Vendido', image: Vendido2, featured: false },
     { id: 3, price: 'CLP 150.000.000', title: 'Condominio Portal Los Heroes, Avenida Heroes De La Concepcion 2784 Torre B, Iquique.', beds: 3, baths: 2, parking: 1, tipo: 'Vendido', image: Vendido3, featured: false },
@@ -120,6 +130,7 @@ const Properties = () => {
                   </div>
                   <div className="p-8 flex-grow flex flex-col">
                     <h3 className="text-3xl font-serif text-secondary mb-3">{prop.price}</h3>
+                    <h3 className="text-3x1 font-serif text-secondary mb-1">{prop.secondprice}</h3>
                     <p className="text-primary font-medium text-lg leading-tight mb-6 flex-grow">{prop.title}</p>
                     <div className="w-full h-px bg-gray-100 mb-6"></div>
                     <div className="flex items-center justify-between text-gray-500">
