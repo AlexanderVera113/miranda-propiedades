@@ -53,7 +53,7 @@ const PropertyDetail = () => {
     },
         {
       id: 4,
-      price: 'CLP 200.000.000',
+      price: 'CLP 250.000.000',
       title: 'Casa en Venta. Pasaje Playa el Saladero con avenida Padre Hurtado, Iquique.',
       description: 'Amplia y espectacular casa de 2 pisos, ideal para familias numerosas. Cuenta con 6 confortables dormitorios, 2 baños, living, comedor, cocina tradicional y una práctica bodega. En su exterior, ofrece un acogedor antejardín, un pequeño patio interior y capacidad para 2 estacionamientos. Propiedad de único dueño y sin deudas (ampliación no regularizada).',
       beds: 6,
